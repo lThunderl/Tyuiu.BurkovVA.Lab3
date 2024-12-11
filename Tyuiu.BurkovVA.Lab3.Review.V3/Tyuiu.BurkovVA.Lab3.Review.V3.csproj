@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3BB3E63-AD67-420C-A9A4-6E1BB02C0409}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tyuiu.BurkovVA.Lab3.Review.V3</RootNamespace>
+    <AssemblyName>Tyuiu.BurkovVA.Lab3.Review.V3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolveArray.Lib\SolveArray.Lib.csproj">
+      <Project>{183f86f9-b483-43dc-8a8e-3792de0267ae}</Project>
+      <Name>SolveArray.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolveArray.Test\SolveArray.Test.csproj">
+      <Project>{3c9fa86a-f834-4990-b92d-1fb7fcaa06a6}</Project>
+      <Name>SolveArray.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolveCalculate.Lib\SolveCalculate.Lib.csproj">
+      <Project>{4dd3a06f-c891-49df-b79a-2835de9c441e}</Project>
+      <Name>SolveCalculate.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolveCalculate.Test\SolveCalculate.Test.csproj">
+      <Project>{2f38a371-dcd7-441a-8f65-044fb4c6dc03}</Project>
+      <Name>SolveCalculate.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolveMathFirstExpression.Lib\SolveMathFirstExpression.Lib.csproj">
+      <Project>{65fd0796-5b0d-4e31-adc2-ab979bef1102}</Project>
+      <Name>SolveMathFirstExpression.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolveMathFirstExpression.Test\SolveMathFirstExpression.Test.csproj">
+      <Project>{d3944275-f6bd-4af5-b182-e8d0e60d3a79}</Project>
+      <Name>SolveMathFirstExpression.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolveMathSecondExpression.Lib\SolveMathSecondExpression.Lib.csproj">
+      <Project>{c09575f7-4090-4a24-ba63-1d89e5678456}</Project>
+      <Name>SolveMathSecondExpression.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolveMathSecondExpression.Test\SolveMathSecondExpression.Test.csproj">
+      <Project>{7db53716-811a-4b2e-bac7-c3bc27f586b7}</Project>
+      <Name>SolveMathSecondExpression.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolveTabMathFunction.Lib\SolveTabMathFunction.Lib.csproj">
+      <Project>{ab46ec7a-89d2-4684-aa8f-39189ee1e8de}</Project>
+      <Name>SolveTabMathFunction.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolveTabMathFunction.Test\SolveTabMathFunction.Test.csproj">
+      <Project>{79ce37e6-0125-48b7-ba4a-3f2a06579491}</Project>
+      <Name>SolveTabMathFunction.Test</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
